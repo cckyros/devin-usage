@@ -1,0 +1,22 @@
+{
+  "name": "devin-usage",
+  "displayName": "Devin Usage",
+  "description": "Devin/Windsurf subscription quota in the status bar — daily & weekly rounded progress bars, overage charges, reset countdowns",
+  "version": "0.1.0",
+  "publisher": "cckyros",
+  "license": "MIT",
+  "repository": { "type": "git", "url": "https://github.com/cckyros/devin-usage" },
+  "icon": "icon.png",
+  "engines": { "vscode": "^1.80.0" },
+  "main": "./extension.js",
+  "activationEvents": ["onStartupFinished"],
+  "categories": ["Other", "Visualization"],
+  "keywords": ["devin", "windsurf", "usage", "quota", "credits", "billing"],
+  "contributes": {
+    "commands": [
+      { "command": "devinUsage.signIn", "title": "Devin Usage: Sign In" },
+      { "command": "devinUsage.showDashboard", "title": "Devin Usage: Show Dashboard" },
+      { "command": "devinUsage.refresh", "title": "Devin Usage: Refresh" }
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+.git
+.gitignore
+.vscode
+docs/
+deploy.bat
+node_modules
+*.vsix
