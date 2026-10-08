@@ -1,0 +1,51 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body { font-family: "Segoe UI", system-ui, sans-serif; margin: 0; padding: 18px; color: #cccccc; background: #1f1f1f; width: 460px; }
+  .head { display:flex; align-items:baseline; gap:10px; margin-bottom:16px; }
+  .head h1 { font-size: 15px; font-weight: 600; margin: 0; }
+  .badge { font-size: 11px; padding: 2px 8px; border-radius: 999px; background: #4d4d4d; color: #fff; }
+  .sub { font-size: 11px; opacity: .6; margin-left: auto; }
+  .row { background: rgba(127,127,127,.07); border: 1px solid rgba(127,127,127,.18); border-radius: 12px; padding: 12px 14px; margin-bottom: 12px; }
+  .row-head { display:flex; justify-content:space-between; font-size: 12.5px; font-weight: 600; margin-bottom: 8px; }
+  .pct { font-variant-numeric: tabular-nums; }
+  .bar { height: 10px; border-radius: 999px; background: rgba(127,127,127,.18); overflow: hidden; }
+  .fill { height: 100%; border-radius: 999px; }
+  .fill.ok { background: linear-gradient(90deg,#4f9cf9,#6ee7c8); }
+  .fill.warn { background: linear-gradient(90deg,#f6b756,#f78c6c); }
+  .fill.crit { background: linear-gradient(90deg,#f76c6c,#e5534b); }
+  .row-foot { display:flex; justify-content:space-between; font-size: 11px; margin-top: 6px; }
+  .dim { opacity: .55; }
+  .money { font-variant-numeric: tabular-nums; font-weight: 700; }
+  .over-neg .money { color: #e5534b; }
+  .chips { display:flex; gap:8px; flex-wrap:wrap; }
+  .chip { font-size: 11px; padding: 4px 10px; border-radius: 999px; border: 1px solid rgba(127,127,127,.2); }
+  button { font: inherit; font-size:12px; padding:6px 14px; border-radius:8px; border:1px solid rgba(127,127,127,.3); background: #0e639c; color: #fff; cursor:pointer; }
+  .foot { display:flex; justify-content:space-between; align-items:center; margin-top:8px; font-size:11px; }
+  .foot button { background: transparent; color: #cccccc; padding:4px 10px; }
+  </style></head><body>
+  <div class="head">
+    <h1>Devin Usage</h1>
+    <span class="badge">Pro</span>
+    <span class="sub">cckyros</span>
+  </div>
+  <div class="row">
+    <div class="row-head"><span>Daily quota</span><span class="pct">72% <span class="dim">left</span></span></div>
+    <div class="bar"><div class="fill ok" style="width:28%"></div></div>
+    <div class="row-foot"><span class="dim">28% used</span><span class="dim">resets in 7h 12m (Oct 9 08:00)</span></div>
+  </div>
+  <div class="row">
+    <div class="row-head"><span>Weekly quota</span><span class="pct">41% <span class="dim">left</span></span></div>
+    <div class="bar"><div class="fill ok" style="width:59%"></div></div>
+    <div class="row-foot"><span class="dim">59% used</span><span class="dim">resets in 3d 16h (Oct 12 08:00)</span></div>
+  </div>
+  <div class="row purchase over-neg">
+    <div class="row-head"><span>Overage due</span><span class="money">$1.22</span></div>
+    <div class="row-foot"><span class="dim">charged beyond plan quota this cycle</span></div>
+  </div>
+  <div class="chips"><div class="chip">Add-on credits: <b>100</b></div></div>
+  <div class="foot">
+    <span class="dim">updated 20:41:07</span>
+    <button>Refresh</button>
+  </div>
+</body></html>

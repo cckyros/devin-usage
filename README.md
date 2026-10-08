@@ -2,7 +2,7 @@
 
 Subscription quota for **Devin Desktop** (Windsurf fork) — shown right in the status bar, like the official usage page but always visible.
 
-![status bar](docs/statusbar.png)
+![dashboard](docs/dashboard.png)
 
 ## Features
 

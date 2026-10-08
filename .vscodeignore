@@ -1,7 +1,7 @@
 .git
 .gitignore
 .vscode
-docs/
+docs/screenshot-mock.html
 deploy.bat
 node_modules
 *.vsix
